@@ -5,5 +5,5 @@ metadata:
   labels:
   {{- include "refinery.labels" . | nindent 4 }}
 data:
-  rules.yaml: |
-{{- toYaml .Values.rules | nindent 4 }}
+  rules.toml: |
+{{- .Values.rules | nindent 4 }}
